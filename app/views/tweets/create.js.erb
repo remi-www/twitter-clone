@@ -1,0 +1,6 @@
+document
+  .querySelector("#tweets")
+  .insertAdjacentHTML("afterBegin", "<%= j render @tweet %>");
+let element = document.querySelector("#tweet_body");
+element.value = "";
+element.dispatchEvent(new Event("input"));
